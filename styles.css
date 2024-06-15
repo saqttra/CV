@@ -1,0 +1,175 @@
+/* 
+***************************************************************
+*
+*   Curriculum vitae template
+*   by Saqttra
+*
+*   MIT License
+*
+***************************************************************
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+}
+
+.A4{
+    width: 21.59cm;
+    height: 27.94cm;
+    border: 1px solid black;
+    flex-direction: row;
+}
+
+.left-panel{
+    width: 30%;
+    padding: 1rem;
+    background-color: #202222;
+    color: white;
+}
+
+.left-panel div{
+    margin-bottom: 1rem;
+}
+
+/* 1st left subpanel */
+.photo-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.7rem;
+    position: relative;
+}
+
+.outer-border{
+    width: 150px;
+    height: 150px;
+    transform: rotate(45deg);
+    border: 4px solid white;
+}
+
+/* RHOMBUS START  */
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+.pic {
+    background: url('assets/placholder.png');
+    width: 180px;
+    height: 180px;
+    margin: -30px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+}
+/* RHOMBUS END */
+
+/* 2nd left subpanel */
+.shields{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* 2nd left subpanel */
+.langs-panel ul{
+    margin: 0.5rem 1rem 0 1rem;
+}
+
+/* 4th left subpanel */
+.contact-panel{
+    margin-top: auto;
+}
+
+.contact-panel span{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/****************************/
+
+.right-panel{
+    width: 70%;
+    padding: 1rem;
+}
+
+hr{
+    margin: 1rem 0 0 0;
+}
+
+.xp-panel, .edu-panel, .about-me-panel{
+    margin-top: 1rem;
+}
+
+
+.info-panel{
+    flex-direction: row;
+    text-align: justify;
+}
+
+.info-panel-left, .info-panel-right{
+    margin: 0.5rem;
+}
+
+.info-panel-left{
+    width: 20%;
+}
+
+.info-panel-right{
+    width: 80%;
+}
+
+.info-panel-right p{
+    margin-top: 0.5rem;
+    font-size: small;
+}
+
+/* Optional leave for future CVs */
+/* .about-me-panel{
+    margin-top: auto;
+} */
+
+.about-me-panel p{
+    font-size: small;
+    text-align: justify;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+@media print {
+    @page {
+        margin: 0;
+        padding: 0;
+    }
+
+    body, html{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .A4{
+        width: 100%;
+        height: 100%;
+    }
+}
